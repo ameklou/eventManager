@@ -47,7 +47,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(_('active'), default=True)
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
     phone=models.CharField(_('phone number'),max_length=20,blank=True,null=True)
-    balance=MoneyField(max_digits=10,decimal_places=2,default=0,default_currency='XOF')
+    balance=MoneyField(_('account balance'),max_digits=10,decimal_places=2,default=0,default_currency='XOF')
     is_staff=models.BooleanField(_('staff member'), default=False)
 
     objects=UserManager()
