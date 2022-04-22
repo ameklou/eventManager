@@ -1,4 +1,4 @@
-Django==2.2.5
+Django==2.2.28
 django-money==0.15
 Pillow==6.1.0
 py-moneyed==0.8.0
